@@ -1,0 +1,15 @@
+Options -Indexes
+
+RewriteEngine On
+RewriteBase /Shawn/
+
+#comment out to keep trailing slashes
+RewriteRule ^(.+)/$ $1 [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteRule ^(.*)$ index.php?$1 [L]
+
+#php_value upload_max_filesize 16M
+#php_value post_max_size 18M
