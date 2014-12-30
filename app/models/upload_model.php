@@ -79,7 +79,7 @@ class Upload_model  extends Model {
      * @return    string      :     the file name extension string
 	 ***********************************************/
     private function getImageExtension($type){
-		switch($type.toLowerCase() ){
+		switch(strtolower($type) ){
 			case 'image/gif': return '.gif';
 			case 'image/jpeg':
 			case 'image/jpg': return '.jpg';

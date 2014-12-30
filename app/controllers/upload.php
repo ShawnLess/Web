@@ -18,7 +18,7 @@ public function upload(){
         try {
             /*The maximum image width is restricted by the width of the blog contianer*/
             /* The maximum file size is constrained in .httpaccess file*/
-            $img_name = $this->_upload->processUploadedImage($_FILES['FilePath'], "/Shawn/files/", array(520, 1024), FALSE);
+            $img_name = $this->_upload->processUploadedImage($_FILES['FilePath'], "/Shawn/files/", array(520, 1024),TRUE);
         }catch(Exception $e){
             echo ($e->getMessage());
             die($e->getMessage());
@@ -29,11 +29,11 @@ public function upload(){
     /****************************
      *  output the result of the uploading
     *****************************/
-    if (	$img_name  )  {
-        echo  DIR.'files/'.$img_name;
-    }else{
-        echo "failed";
-    } 
+    if (	$img_name  )  $result='Successed';
+    else                $result='Failed';
+     
+    echo  '<p id="result">'.$result.'</p>';
+    echo  '<p id="img_url">'.DIR.'files/'.$img_name.'</p>';  
 }
 
 }

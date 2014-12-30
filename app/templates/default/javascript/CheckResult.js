@@ -1,11 +1,13 @@
 function CheckResult( ){
     //check upload result
-    var  result = document.getElementById('upload_result').contentDocument.body.innerHTML;
+    var  pDoc   = document.getElementById('upload_result').contentDocument;
+    var  result = pDoc.getElementById('result').innerHTML;
+    var  img_url= pDoc.getElementById('img_url').innerHTML;
     var  status= '';
-    if(result.length > 0) {
-        if ( result.indexOf('failed')  < 0)  {
+    if(pDoc.body.innerHTML.length > 0) {
+        if ( result == 'Successed' )  {
             status='Ready to upload';
-            var image='<img  class="blogimage" src="' + result + '">' ;
+            var image='<img  class="blogimage" src="' + img_url+ '">' ;
             InsertText('entryinput', image);
             Preview('entryinput','preview_frame');
         }else{
