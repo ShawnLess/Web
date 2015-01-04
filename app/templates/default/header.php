@@ -4,6 +4,20 @@
 	<meta charset="utf-8">
 	<title><?php echo $data['title'].' - '.SITETITLE; //SITETITLE defined in index.php?></title>
 	<link href="<?php echo url::get_template_path();?>css/style.css" rel="stylesheet">
+  <!-- Include *at least* the core style and default theme -->
+  <link href="<?php echo url::get_template_path ();?>javascript/syntaxhighlighter/styles/shCore.css" 
+                                                rel="stylesheet" type="text/css" />
+  <link href="<?php echo url::get_template_path ();?>javascript/syntaxhighlighter/styles/shThemeDefault.css" 
+                                                rel="stylesheet" type="text/css" />
+  <script src="<?php echo url::get_template_path();?>javascript/syntaxhighlighter/scripts/shCore.js" 
+                                                                 type="text/javascript"></script>
+  <script src="<?php echo url::get_template_path();?>javascript/syntaxhighlighter/scripts/shLegacy.js" 
+                                                                 type="text/javascript"></script>
+  <script src="<?php echo url::get_template_path();?>javascript/syntaxhighlighter/scripts/shAutoloader.js" 
+                                                                 type="text/javascript"></script>
+ <!-- Include at least on brush--> 
+  <script src="<?php echo url::get_template_path();?>javascript/syntaxhighlighter/scripts/shBrushJScript.js" 
+                                                                 type="text/javascript"></script>
 </head>
 
 <body>

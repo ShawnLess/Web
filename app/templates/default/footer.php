@@ -13,5 +13,10 @@
 
 </div>
 
+<!-- Finally, to actually run the highlighter, you need to include this JS on your page -->
+<script type="text/javascript">
+     SyntaxHighlighter.all()
+</script>
+
 </body>
 </html>
