@@ -42,12 +42,12 @@ class Entries_model  extends Model {
   }
   
   public function get_entries_by_month ($month,$year) {
-     return $this->_db->select("SELECT * FROM ".PREFIX."entries WHERE MONTH(created)=:month AND YEAR(created)=:year",
+     return $this->_db->select("SELECT * FROM ".PREFIX."entries WHERE MONTH(created)=:month AND YEAR(created)=:year ORDER BY id DESC",
                                               array(':month' => $month,':year' => $year) );
   }
 
   public function get_entries_by_tag ($tag) {
-     return $this->_db->select("SELECT * FROM ".PREFIX."entries WHERE id IN ( SELECT blog_id FROM blog_tag WHERE tag_id = (SELECT id FROM tags WHERE name=:tag) )",
+     return $this->_db->select("SELECT * FROM ".PREFIX."entries WHERE id IN ( SELECT blog_id FROM blog_tag WHERE tag_id = (SELECT id FROM tags WHERE name=:tag) ) ORDER BY id DESC",
                                               array(':tag' => $tag) );
   }
 
