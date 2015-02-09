@@ -86,41 +86,61 @@ public function add(){
 }
 
 public function comment_add($blog_id){
-    if(isset($_POST['submit'])) {
-        if( $_POST['submit']=='Submit Comment' ) {
-            $name = $_POST['name'];
-            $email = $_POST['email'];
-            $comment = $_POST['comment'];
+  $name = $_POST['name'];
+  $email = $_POST['email'];
+  $comment = $_POST['comment'];
 
-            if(empty($name)){ $error[] = 'Please enter the name'; }
-            if(empty($email)){ $error[] = 'Please enter the email'; }
-            if(empty($comment)){ $error[] = 'Please enter comment'; }
+  if(empty($name)){ $error[] = 'Please enter the name'; }
+  if(empty($email)){ $error[] = 'Please enter the email'; }
+  if(empty($comment)){ $error[] = 'Please enter comment'; }
+  
+  require_once('app/helpers/RainCaptcha-1.1.0.php');
+  $rainCaptcha = new RainCaptcha();
 
-            if(!isset($error)){
-                /****************************************************/
-                /********** Update the entries table  ***************/
-                $postdata = array(
-                    'name' => $name,
-                    'email' => $email,
-                    'comment'  => $comment,
-                    'blog_id'       => $blog_id
-                );
-                $this->_entries->add_comment($postdata);
-                    
-            } //end of  if(!isset($error))
-        } //end of if( $_POST['submit']=='Save' )
-        $entry =$this->_entries->get_entry ($blog_id) ;
-        $url = $entry[0]->url;
-        Url::redirect('single_entry/url='.$url);
-    }
+  if(isset ($_POST['captcha']) ){
+     $isCaptchaCorrect = $rainCaptcha->checkAnswer($_REQUEST['captcha']);
+     if(! $isCaptchaCorrect) {
+        $error[] ='Please enter the Correct Character';
+      }
+  }
 
-    $data['title'] = $url;
+  /****************************************************/
+  /********** Update the entries table  ***************/
+  $postdata = array(
+      'name'      => $name,
+      'email'     => $email,
+      'comment'   => $comment,
+      'blog_id'   => $blog_id
+  );
+  if(!isset($error)){ $this->_entries->add_comment($postdata); }
+  else              { 
+      $data['error']    = $error;             
+      $data['postdata'] = $postdata;
+  }
 
-    $this->view->rendertemplate('header',$data);
-    $this->view->render('entries/single_entry',$data);
-    $this->view->render('entries/tags',$data);
-    $this->view->render('entries/archives',$data);
-    $this->view->rendertemplate('footer',$data);
+  $entry =$this->_entries->get_entry ($blog_id) ;
+  $url = $entry[0]->url;
+//    Url::redirect('single_entry/url='.$url);
+
+  $data['title'] = $url;
+
+  //Generate the entries data 
+  $data['entry'] = $entry;
+
+   //Generate the comments data 
+  $data['comments'] = $this->_entries->get_comments_by_url($url);
+   
+   //Generate the archive data
+  $data['archives']=$this->_entries->get_archives();
+   
+   //Generate the tags data
+  $data['most_tag_names']= $this->_entries->get_mostused_10_tags();
+
+  $this->view->rendertemplate('header',$data);
+  $this->view->render('entries/single_entry',$data);
+  $this->view->render('entries/tags',$data);
+  $this->view->render('entries/archives',$data);
+  $this->view->rendertemplate('footer',$data);
 }
 
 public function confirm_comment_delete($id){
