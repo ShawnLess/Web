@@ -161,7 +161,7 @@ blockquote {
 }
 
 #container {
-	width: 785px;
+/*	width: 785px;*/
 	padding-left: 7px;
 	padding-right: 7px;
 	text-align: left;
@@ -175,6 +175,7 @@ blockquote {
 	width: 210px;
 	margin-top: 13px;
 	margin-bottom: 60px;
+	margin-right: 100px;
 	float: right;
 	display: inline;
 }
@@ -240,10 +241,10 @@ blockquote {
 }
 
 #content {
-	margin: 0px 0px 60px 0px;
+	margin: 0px 0px 60px 100px;
 	padding: 0;
 	float: left;
-	width: 555px;
+	width: 700px;
 	display: block;
 }
 
