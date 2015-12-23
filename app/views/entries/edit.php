@@ -31,7 +31,7 @@ if(isset($error)){
         </p>
 			
         <p>
-        <textarea name="entry" id="entryinput" cols="100%" rows="10" ><?php echo $entry ?></textarea> 
+        <textarea name="entry" id="entryinput" cols="100%" rows="40" ><?php echo $entry ?></textarea> 
         </p>
 			
      <input type="submit" name="submit" value="Update"/>

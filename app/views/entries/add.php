@@ -24,7 +24,7 @@ if(isset($error)){
       <p> <input type="text" name="tags" maxlength="150" /> 
 			<label> Tags </label> </p>
       <p>
-		  <textarea name="entry" id="entryinput" cols="100%" rows="25" ></textarea> 
+		  <textarea name="entry" id="entryinput" cols="100%" rows="40" ></textarea> 
      </p>
 			
      <input type="submit" name="submit" value="Save"/>
