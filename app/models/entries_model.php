@@ -89,7 +89,8 @@ class Entries_model  extends Model {
     	$this->_db->insert(PREFIX."blog_tag",$blog_tag_data);
     }
 	}
-	
+	 
+  /****************************************************************/
 	public function update_entry ($data,$where) {
 	  $blog_id = $where['id'];
 	  
@@ -115,7 +116,8 @@ class Entries_model  extends Model {
 		
 	}
  
-  public function delete_entry ($id) {
+  /****************************************************************/
+  public function delete_entry ($id, $img_dir) {
 
     $entry = $this->get_entry($id);
     $tags  = $entry[0]->tags;
@@ -127,12 +129,17 @@ class Entries_model  extends Model {
 		$this->_db->delete(PREFIX."blog_tag",array('blog_id' => $id ), 100);
 		
 		$this->_delete_tags_by_name( $tags);
+    
+    /* Delete all the images contained in this entry    */
+    $this->_delete_all_images( $entry[0]->entry, $img_dir );
 	}
 
+  /****************************************************************/
     public function delete_comment($id){
         $this->_db->delete(PREFIX."comments", array('id' => $id) );
     }
     
+  /****************************************************************/
     public function get_archives(){
         $now = time();
         $month=date('m',$now);
@@ -198,5 +205,28 @@ class Entries_model  extends Model {
           }
         }
 	}
+ 
+ /* delete all the images content in this entry */
+ private function _delete_all_images( $html, $img_dir ){
+   //get all the image tags from the content
+   preg_match_all('/<img[^>]+>/i',$html, $img_tags); 
+  
+   $src_tag=array();
+   foreach( $img_tags as $img_tag) {
+     /* @[1][0]   src="http://../.../  
+        @[2][0]   .....jpg
+     */
+     preg_match_all('/(src *= *"[^"]*\/)([^"]+)"/i',$img_tag[0], $src_tag);
+
+     /*delete the image on the server */
+     //Creat the full path to the image for saving
+		 $filepath = $img_dir . $src_tag[2][0];
+		 $absolute = $_SERVER['DOCUMENT_ROOT'].$filepath;
+		  
+		 if( ! unlink($absolute)){
+		 	throw new Exception("Could't delete file:".$absolute);
+		 }
+   } 
+ }
 	
 }
