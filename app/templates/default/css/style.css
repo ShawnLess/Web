@@ -3,7 +3,7 @@ body {
 	margin: 0px;
 	padding: 0px;
 	font-family: tahoma, verdana, arial, helvetica, sans-serif;
-	font-size: 12px;
+	font-size: 15px;
 	color: #444444;
 }
 
@@ -244,7 +244,7 @@ blockquote {
 }
 
 #content {
-	margin: 0px 0px 60px 100px;
+	margin: 10px 0px 60px 100px;
 	padding: 0;
 	float: left;
 	width: 700px;
@@ -441,4 +441,54 @@ form {
 #footer p {
 	margin: 0;
 	padding: 0;
+}
+
+#headimage {
+	float: left;
+	width: 50%;
+	display: block;
+}
+
+#contact {
+	padding: 10px 0px 0px 0px;
+	float: right;
+	width: 50%;
+	display: block;
+}
+#main_resume {
+	clear: both
+}
+
+.section {
+  display: block;
+  border-bottom: 2px solid #C8D0CA;
+  height: 30px;
+}
+
+.section-title {
+  background:#C8D0CA;
+  float: left;
+  color:#5D6E63;
+  font-size:26px;
+  display: block;
+}
+
+.research-title {
+ float: left;
+ width: 50%;
+ font-weight: bold;
+}
+
+.research-date{
+ float: right;
+ width: 50%;
+ text-align:right;
+}
+
+.research-field{
+clear:both;
+}
+
+.publication li {
+margin:10px 0px;
 }

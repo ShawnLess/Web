@@ -32,8 +32,8 @@
 	    
 	    <div id="topmenu">
 	      <ul>
-		      <li><a href="<?php echo DIR.''?>"><span>Blog</span></a></li>	
-		      <li><a href="#"><span>About</span></a></li>	
+		      <li><a href="<?php echo DIR.'entries'?>"><span>Blog</span></a></li>	
+		      <li><a href="<?php echo DIR.''?>"><span>About</span></a></li>	
 		      <li><a href="#"><span>Contact</span></a></li>	
 		      <?php 
 		        if(Session::get('loggin') == true) 
