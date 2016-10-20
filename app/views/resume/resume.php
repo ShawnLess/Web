@@ -1,4 +1,4 @@
-<div id="content"> 
+<div id="resume-content"> 
 
 <!--The image of myself -->
 <div id="headimage">
@@ -19,8 +19,12 @@ Computer Science and Engineering </br>
 University of California, San Diego 92093 
 </p>
 
-<p> <span style="font-size:15px">email: </span> 
-<a href="mailto:shawnless.xie@gmail.com"> shawnless.xie@gmail.com </a>
+<p> 
+<b> email:</b> <a href="mailto:shawnless.xie@gmail.com"> shawnless.xie@gmail.com </a>
+</p>
+
+<p>
+<b> linkedin: </b> <a href="https://cn.linkedin.com/in/shawnless"> https://cn.linkedin.com/in/shawnless</a>
 </p>
 
 </div><!--contact -->

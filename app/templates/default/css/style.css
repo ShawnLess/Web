@@ -9,7 +9,7 @@ body {
 
 a, a:visited, a:active {
 	font-family: tahoma, verdana, arial, helvetica, sans-serif;
-	font-size: 12px;
+	font-size: 15px;
 	color: #5D6E63;
 	text-decoration: none;
 }
@@ -60,7 +60,8 @@ blockquote {
 }
 
 #header {
-  position: fixed;
+  /*position: fixed; */
+  position:absolute;
   top: 0;
   left:0;
 	height: 110px;
@@ -251,6 +252,13 @@ blockquote {
 	display: block;
 }
 
+#resume-content {
+	margin: 10px 100px 60px 100px;
+	padding: 0;
+	float: left;
+	display: block;
+}
+
 .posttitle {
 	margin-top: 15px;
 	margin-bottom: 0px;
@@ -302,7 +310,7 @@ blockquote {
 
 .postinfo {
 	margin-left: 59px;
-	padding-bottom: 6px;
+	padding-bottom: 2px;
 	border-bottom: 1px solid #C8D0CA;
 }
 
@@ -423,7 +431,7 @@ form {
 	}
 	
 #footer {
-  position: fixed;
+  /* position: fixed; */
   right:0;
   bottom:0;
   width: 100%;
@@ -450,9 +458,9 @@ form {
 }
 
 #contact {
-	padding: 10px 0px 0px 0px;
+ /*	padding: 10px 0px 0px 0px; */
 	float: right;
-	width: 50%;
+	width: 40%;
 	display: block;
 }
 #main_resume {
@@ -463,6 +471,7 @@ form {
   display: block;
   border-bottom: 2px solid #C8D0CA;
   height: 30px;
+  margin-top:20px;
 }
 
 .section-title {
@@ -491,4 +500,26 @@ clear:both;
 
 .publication li {
 margin:10px 0px;
+}
+
+
+.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 31%;
+}
+
+.gallery:hover{
+  border: 1px solid #777;
+}
+
+.gallery img{
+  width: 100%;
+  height:auto;
+}
+
+.desc {
+  padding: 15px;
+  text-align: center;
 }

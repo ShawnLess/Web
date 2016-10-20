@@ -18,7 +18,7 @@
 	          echo '<p> 大家好，我叫木木，希望和大家交朋友～～ </p>';
 		}else {
     		  define('DB_NAME','ShawnBlog');
-	    	  echo '<h1><a href="#">'."Shawn's Blog". "</a></h1>";
+	    	  echo '<h1><a href="#">'."Shaolin Xie". "</a></h1>";
 	    	  echo '<p>God helps those who help themselves</p>';
 	        }
 		?>

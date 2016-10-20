@@ -11,13 +11,12 @@ if(isset($error)){
 <script   src=<?php echo url::get_template_path()."javascript/PrepareUpload.js"  ?>  > </script>
 <script   src=<?php echo url::get_template_path()."javascript/InsertText.js"  ?>  > </script>
 <script   src=<?php echo url::get_template_path()."javascript/CheckResult.js"  ?>  > </script>
-<!--  ------------------------------------------------------------------------------------------------------------------------- -->
 <div id="content">    <!-- #### Start of the entries content #### -->
 <div id="writeentry">
   <div id="writeentrytop">
 	<form method="post" action=""  id="entryform">
-	<!--  ------------------------------------------------------------------------------------------------------------------------- -->
-    <!--                                                           The Text edit area                                                 --------------- -->
+	<!--  -->
+    <!-- The Text edit area -->
     <p> <input type="text" name="title" maxlength="150" /> 
         <label> Title </label>
     </p>
@@ -31,8 +30,7 @@ if(isset($error)){
      <input type="submit" name="submit" value="Cancel"/>
      <input type="button"  value="Preview" onclick="Preview('entryinput', 'preview_frame')" />
 	</form>
-    <!--  ------------------------------------------------------------------------------------------------------------------------- -->
-    <!--                                                           The upload tool box                                             --------------- -->
+    <!--The upload tool box  -->
     <div id='upload_box'>
     <form method="post" action="../upload/upload"  id="uploadform"  enctype="multipart/form-data">
         <input type ="button"   name="action"  value="Insert Image"  onClick='PrepareUpload()'>
@@ -42,9 +40,8 @@ if(isset($error)){
     </div>
     
     <p>     <iframe id="upload_result"  hidden='true'  onload='CheckResult()'  >     </iframe>    </p>
-     <!--  ------------------------------------------------------------------------------------------------------------------------- -->
-     <!--                                                           The Preview Area                                                    --------------- -->
-     <iframe id="preview_frame"   src=<?php echo url::get_template_path()."Preview.html" ?>  >
+     <!--The Preview Area -->
+     <iframe id="preview_frame"   src=<?php echo url::get_template_path()."PreviewTempl.html" ?>  >
      </iframe>
   </div>
 </div>
