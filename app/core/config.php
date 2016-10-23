@@ -28,7 +28,7 @@ define('PREFIX','');
 define('SESSION_PREFIX','smvc_');
 
 //optionall create a constant for the name of the site
-define('SITETITLE','Shawn\'Blog ');
+define('SITETITLE','Shaolin Xie\'website ');
 
 //set the default template
 Session::set('template','default');

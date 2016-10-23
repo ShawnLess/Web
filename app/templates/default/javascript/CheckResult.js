@@ -5,10 +5,15 @@ function CheckResult( ){
     if(pDoc.body.innerHTML.length > 0) {
         var  result = pDoc.getElementById('result').innerHTML;
         var  img_url= pDoc.getElementById('img_url').innerHTML;
+        var  desc_text = document.getElementById("desc").value;
+
         if ( result == 'Successed' )  {
             status='Ready to upload';
-            var image='<img  class="blogimage" src="' + img_url+ '">' ;
-            InsertText('entryinput', image);
+            var image_text   =  '<div class="gallery">\n';
+                image_text  +=  '<img  class="blogimage" src="' + img_url+ '">\n' ;
+                image_text  +=  '<div class="desc">' + desc_text + '</div>\n';
+                image_text  +=  '</div>'
+            InsertText('entryinput', image_text);
             Preview('entryinput','preview_frame');
         }else{
             status='upload failed.'

@@ -260,6 +260,7 @@ blockquote {
 }
 
 .posttitle {
+  clear: left;
 	margin-top: 15px;
 	margin-bottom: 0px;
 	height: 60px;
@@ -505,13 +506,13 @@ margin:10px 0px;
 
 .gallery {
     margin: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid #C8D0CA;
     float: left;
     width: 31%;
 }
 
 .gallery:hover{
-  border: 1px solid #777;
+  border: 1px solid #5D6E63;
 }
 
 .gallery img{

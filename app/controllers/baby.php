@@ -8,10 +8,12 @@ class Baby extends Controller {
 
 	public function baby(){
         if( Session::get('baby') == true){
-		    Session::set('baby', false);
+		        Session::set('baby', false);
         }else{
             Session::set('baby', true);
         }
-        url::redirect('');
+//      Session::set('baby', true);
+
+        url::redirect('entries');
 	}
 }

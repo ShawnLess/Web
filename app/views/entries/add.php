@@ -35,7 +35,9 @@ if(isset($error)){
     <form method="post" action="../upload/upload"  id="uploadform"  enctype="multipart/form-data">
         <input type ="button"   name="action"  value="Insert Image"  onClick='PrepareUpload()'>
         <input type="file"   name="FilePath" id="uploaded_file" >
-        <label id='upload_status'> Ready to upload</label>
+        <label id='upload_status'> Ready to upload</label> </br>
+        <label>Description </label>
+        <input type="text"   name="Description", id="desc", maxlength="150">
     </form>
     </div>
     
