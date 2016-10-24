@@ -79,6 +79,7 @@ University of California, San Diego 92093
     <li> Successfully taped out with 40nm process. Power efficiency is about 10x of traditional CPU and GPU </li>
     <li> Results was published at top-tier computer science conference (HPCA)  </li>
   </ul>
+ <div class="hide">
  <I> Project Responsibility: </I>
  <ul>
      <li>Proposed and defined the MaPU Instruction Set Architecture and the detailed micro-architecture </li>
@@ -95,7 +96,11 @@ University of California, San Diego 92093
      <li> STA &amp circuit optimization: Timing constrains specification, static timing analysis and debug, micro-architecture &amp circuit &amp layout optimization (500MHz to 1GHz Frequency improvement) </li>
      <li> Power Estimation &amp Analysis: Switching activity setup, library setup, power group definition. Estimated Power &amp Real Chip Power difference &lt 8% </li>
    </ul>
- 
+   </div>
+
+    <div class="more-less"> more&lt&lt </div>
+
+
     <div class="research-title"> PhD student </div>
     <div class="research-date"> April 2006 -- Dec 2009 </div>
     <I>Institute of Automation, Chinese Academy of Sciences, Beijing, China </I> </br>

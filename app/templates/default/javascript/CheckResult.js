@@ -10,7 +10,9 @@ function CheckResult( ){
         if ( result == 'Successed' )  {
             status='Ready to upload';
             var image_text   =  '<div class="gallery">\n';
+                image_text  +=  '<a href="' + img_url + '">\n';
                 image_text  +=  '<img  class="blogimage" src="' + img_url+ '">\n' ;
+                image_text  +=  '</a>\n';
                 image_text  +=  '<div class="desc">' + desc_text + '</div>\n';
                 image_text  +=  '</div>'
             InsertText('entryinput', image_text);
