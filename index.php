@@ -3,8 +3,9 @@ require('app/core/autoloader.php');
 
 //define routes
 //Router::get('/', 'entries@entries');
-Router::get('/', 'resume@resume');
-Router::get('/baby', 'baby@baby');
+//Router::get('/', 'resume@resume');
+//Router::get('/baby', 'baby@baby');
+Router::get('/', 'baby@baby');
 Router::get('/entries', 'entries@entries');
 Router::get('/entries/index/(:any)', 'entries@index');
 Router::get('/single_entry/(:any)', 'single_entry@index');

@@ -13,7 +13,7 @@
 		        echo "<h2> <a href='".DIR."single_entry/url=$record->url'>$record->title</a></h2>"."\n"  ;
 		          echo '<div class="postinfo">'."\n"     ;
 		          
-		          echo '<span class="postauthcat">Posted at '.date("h:i a",$timestamp).' with tags: ' ;
+		          echo '<span class="postauthcat">'.date("h:i a",$timestamp).': ' ;
 		            foreach ( $tags as $tag)  echo "<a href='".DIR."entries/index/tag=".$tag."'>".urldecode($tag)." </a>"; 
 		          echo "</span> \n";
 		          

@@ -73,13 +73,13 @@ University of California, San Diego 92093
   <div class="research-date">  Jan 2010 -- July 2015 </div>
   <I>Institute of Automation, Chinese Academy of Sciences, Beijing, China </I> </br>
   <b> Project: MaPU -- Mathematical Computing Processor </b>
+  <div class="hide">
   <ul> 
     <li> SoC chip with 1 ARM core and 4 novel MaPU cores running at 1GHz, targeting at computation intensive applications </li>
     <li> Supported by the Strategic Priority Research Program of Chinese Academy of Sciences with 50 million CNY </li>
     <li> Successfully taped out with 40nm process. Power efficiency is about 10x of traditional CPU and GPU </li>
     <li> Results was published at top-tier computer science conference (HPCA)  </li>
   </ul>
- <div class="hide">
  <I> Project Responsibility: </I>
  <ul>
      <li>Proposed and defined the MaPU Instruction Set Architecture and the detailed micro-architecture </li>
@@ -98,7 +98,7 @@ University of California, San Diego 92093
    </ul>
    </div>
 
-    <div class="more-less"> more&lt&lt </div>
+    <div class="more-less"> more&gt&gt </div>
 
 
     <div class="research-title"> PhD student </div>

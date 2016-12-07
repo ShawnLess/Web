@@ -12,12 +12,15 @@ define('DIR','http://www.shawnless.net/Shawn/');
 //database details ONLY NEEDED IF USING A DATABASE
 define('DB_TYPE','mysql');
 define('DB_HOST','localhost');
-
+/*
 if(isset($_SESSION['smvc_baby']) && $_SESSION['smvc_baby'] == true){
     define('DB_NAME','BabyBlog');
 }else {
     define('DB_NAME','ShawnBlog');
 }
+*/
+
+define('DB_NAME','BabyBlog');
 
 //define('DB_USER','user2387323');
 define('DB_USER','shawn');
@@ -28,7 +31,15 @@ define('PREFIX','');
 define('SESSION_PREFIX','smvc_');
 
 //optionall create a constant for the name of the site
-define('SITETITLE','Shaolin Xie\'website ');
+/*
+if(isset($_SESSION['smvc_baby']) && $_SESSION['smvc_baby'] == true){
+  define('SITETITLE','Joey Xie\'s website ');
+}else {
+  define('SITETITLE','Shaolin Xie\'s website ');
+}
+*/
+
+define('SITETITLE','Joey Xie\'s website ');
 
 //set the default template
 Session::set('template','default');

@@ -176,7 +176,7 @@ blockquote {
 }
 
 #sidebar {
-	width: 210px;
+	width: 330px;
 	margin-top: 13px;
 	margin-bottom: 60px;
 	margin-right: 100px;
@@ -185,15 +185,16 @@ blockquote {
 }
 
 .sidebarbox {
-	background: #F1F3F2 url('images/mb.gif') left bottom no-repeat;
+	/*background: #F1F3F2 url('images/mb.gif') left bottom no-repeat; */
 	display: block;
 	margin: 0px 0px 14px 0px;
 }
 
 .sidebarboxtop {
-	background: url('images/mt.gif') left top no-repeat;
+/*	background: url('images/mt.gif') left top no-repeat; */
 	padding: 10px 15px 11px 15px;
-	width: 180px;
+	width: 300px;
+	background-color: #F1F3F2;
 }
 
 #sidebar h2 {
@@ -202,7 +203,7 @@ blockquote {
 	padding-bottom: 1px;
 	font-size: 32px;
 	font-weight: normal;
-	background: url('images/borderb.gif') left bottom no-repeat; 
+	background: url('images/borderb.gif') left bottom no-repeat;  
 }
 
 #sidebar ul {
@@ -278,7 +279,7 @@ blockquote {
 .posttitle h2 a, .posttitle h2 a:visited, .posttitle h2 a:active {
   display:block; 
 /*  margin-top:10px; */
-  padding-top:11px; 
+  padding-top:13px; 
 	font-size: 40px;
 	font-weight: normal;
 	color: #5D6E63;
@@ -294,7 +295,7 @@ blockquote {
 	float: left;
 	background: url('images/datebg.gif') no-repeat left center;
 	color: #5D6E63;
-	width: 55px;
+	width: 62px;
 	text-align: center;
 	font-size: 28px;
 /*	line-height: 16px; */
@@ -320,8 +321,8 @@ blockquote {
 .postinfo {
 /*	margin-left: 59px; */
   clear: left; 
-	padding-bottom: 2px;
-	border-bottom: 1px solid #C8D0CA;
+/*	padding-bottom: 2px; */
+	border-bottom: 5px solid #C8D0CA;
 }
 
 .postauthcat {
@@ -339,7 +340,7 @@ blockquote {
 
 .posttext {
 	line-height: 130%;
-	margin-top: 7px;
+	margin-top: 12px;
 	margin-bottom: 0px;
 	padding-left: 1px;
 }

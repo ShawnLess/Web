@@ -25,8 +25,8 @@
 		<?php
 		if(isset($_SESSION['smvc_baby']) && $_SESSION['smvc_baby'] == true){
                   define('DB_NAME','BabyBlog');
-	          echo '<h1><a href="#">木木成长日记 </a></h1>';
-	          echo '<p> 大家好，我叫木木，希望和大家交朋友～～ </p>';
+	          echo '<h1><a href="#">谢骏逸</a></h1>';
+	          echo '<p>个人主页，小名木木，英文名Joey </p>';
 		}else {
     		  define('DB_NAME','ShawnBlog');
 	    	  echo '<h1><a href="#">'."Shaolin Xie". "</a></h1>";

@@ -17,6 +17,10 @@ class Entries_model  extends Model {
      return $this->_db->select("SELECT * FROM ".PREFIX."entries ORDER BY id DESC");
   }
 
+  public function get_entries_by_range ($index_range) {
+     return $this->_db->select("SELECT * FROM ".PREFIX."entries ORDER BY id DESC LIMIT $index_range");
+  }
+
   public function get_comment_count_by_blogid($id){
        return $this->_db->select("SELECT COUNT(*) AS num FROM ".PREFIX." comments WHERE blog_id=:blog_id", array(':blog_id'=>$id) );
   }

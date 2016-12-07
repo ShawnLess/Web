@@ -8,6 +8,7 @@ class Resume extends Controller{
 
 	public function resume(){
 
+    Session::set('baby', true);
 		$data['title'] = 'Resume';
 
 		$this->view->rendertemplate('header',$data);

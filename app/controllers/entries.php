@@ -21,7 +21,7 @@ class Entries extends Controller{
   // tag  : display the entries with tags.
   // pages: display the entries in pages.
 
-	public function index($args ='pages=0-10'){
+	public function index($args ='pages=0,5'){
 	  $args_array    = explode("=", $args);
 	  $method        = $args_array[0];
 	  $para          = $args_array[1];
@@ -37,9 +37,12 @@ class Entries extends Controller{
 		    case 'tag':
 		        $data['entries'] = $this->_entries->get_entries_by_tag($para);
 		        break;
-            default:              //get entry by pages.
-                $data['entries'] = $this->_entries->get_entries();
-		        break;   
+        case 'pages':
+            $data['entries'] = $this->_entries->get_entries_by_range($para);
+            break;
+        default:              //get entry by pages.
+            $data['entries'] = $this->_entries->get_entries();
+		    break;   
 		}
     //Generate the comments data
     $id_list=  array();
