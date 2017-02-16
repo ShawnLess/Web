@@ -12,18 +12,17 @@ define('DIR','http://www.shawnless.net/Shawn/');
 //database details ONLY NEEDED IF USING A DATABASE
 define('DB_TYPE','mysql');
 define('DB_HOST','localhost');
-/*
+
 if(isset($_SESSION['smvc_baby']) && $_SESSION['smvc_baby'] == true){
-    define('DB_NAME','BabyBlog');
+    define('DB_NAME','JoeyBlog');
 }else {
     define('DB_NAME','ShawnBlog');
 }
-*/
 
-define('DB_NAME','BabyBlog');
 
 //define('DB_USER','user2387323');
-define('DB_USER','shawn');
+//define('DB_USER','shawn');
+define('DB_USER','shawnless1');
 define('DB_PASS','ytmfitss');
 define('PREFIX','');
 
