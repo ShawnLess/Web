@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title><?php echo $data['title'].' - '.SITETITLE; //SITETITLE defined in index.php?></title>
-	<link href="<?php echo url::get_template_path();?>css/mobile.css" rel="stylesheet">
+	<link href="<?php echo url::get_template_path();?>css/style.css" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script>
   $(document).ready(function(){

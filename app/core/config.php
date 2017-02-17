@@ -30,15 +30,12 @@ define('PREFIX','');
 define('SESSION_PREFIX','smvc_');
 
 //optionall create a constant for the name of the site
-/*
 if(isset($_SESSION['smvc_baby']) && $_SESSION['smvc_baby'] == true){
   define('SITETITLE','Joey Xie\'s website ');
 }else {
   define('SITETITLE','Shaolin Xie\'s website ');
 }
-*/
 
-define('SITETITLE','Joey Xie\'s website ');
 
 //set the default template
 Session::set('template','default');
