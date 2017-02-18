@@ -183,11 +183,21 @@ blockquote {
 	float: right;
 	display: inline;
 }
+#resume_sidebar {
+	margin-top:20px;
+	width: 20%;
+	float:left;
+}
 
 .sidebarbox {
 	background: #F1F3F2 url('images/mb.gif') left bottom no-repeat;
 	display: block;
 	margin: 0px 0px 14px 0px;
+}
+.resume_sidebarbox {
+	display: block;
+	margin: 0px 0px 14px 0px;
+	float: left;
 }
 
 .sidebarboxtop {
@@ -452,20 +462,9 @@ form {
 	padding: 0;
 }
 
-#headimage {
-	float: left;
-	width: 50%;
-	display: block;
-}
 
-#contact {
- /*	padding: 10px 0px 0px 0px; */
-	float: right;
-	width: 40%;
-	display: block;
-}
 #main_resume {
-	clear: both
+	margin-left:30%; 
 }
 
 .section {

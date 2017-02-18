@@ -1,11 +1,12 @@
 <div id="resume-content"> 
 
+<div id=resume_sidebar>
 <!--The image of myself -->
-<div id="headimage">
+<div id="headimage" >
 <img src= '<?php echo DIR. "/files/resume.jpg" ?>'> </img>
 </div>
 
-<div id="contact">
+<div id="contact" class="resume_sidebarbox">
 
 <p>  
 <span style="font-size:20px"> Senior Research Scientiest </span> </br>
@@ -28,7 +29,7 @@ University of California, San Diego 92093
 </p>
 
 </div><!--contact -->
-
+</div><!--resume_sidebar -->
 
 <!--Start of the main resume -->
 <div id="main_resume">
