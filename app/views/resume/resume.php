@@ -40,7 +40,11 @@ University of California, San Diego 92093
   </div>  <!--section-->
 
   <div class="posttext"> 
-    <p>  As an experienced engineer, my work focuses on innovative application specific processor architecture. I am specialized in processor micro architecture and digital VLSI design &amp optimization. I have 9 years research experience in advanced processor architecture, and own 7 related US patents and 17 Chinese patents. I also have publications at top-tier computer architecture conference. 
+    <p> I got my bachelor degree in 2004, and master degree in 2006 at Zhejiang University, China, majoring in electrical engineering; Then I got my PhD degree majoring in computer science at 2009, Chinese Academy of Sciences, China. </p>
+
+    <p>I'm a research scientist in Chinese Academy of Sciences since graduation. My research focuses on innovative digital signal microprocessor architecture exploration. I am specialized in VLIW processor micro architecture and digital VLSI design & timing optimization, and have rich engineering experience in <b>full flow chip tape out</b>. </p> 
+
+    <p>Currently, I am very interested in open source processor architecture(<b>RISC-V</b>), configurable computing(<b>CGRA</b>) and Hardware Accelerator( Deep Learning, Data Center, IoT).
     </p>
    </div>  <!--posttext-->
 
@@ -54,24 +58,13 @@ University of California, San Diego 92093
   <div class="research-date">  July 2016 -- Present </div> 
   <I>School of Computer Science and Engineering, UCSD, San Diego, California   </I></br>
   <ul>
-     <li>  Work with Michael Taylor, the author of MIT RAW processor and the HPCA 2015 chair </li>
+     <li>  Work with <a href=http://cseweb.ucsd.edu/~mbtaylor/> Michael Taylor </a>, the author of MIT RAW processor and the HPCA 2015 chair </li>
      <li>  Focus on manycore and compiler directed accelerator architecture </li>
   </ul>
 
 
-  <div class="research-title">Principle Engineer </div>
-  <div class="research-date"> Jan 2014 -- Present </div> 
-  <I>Institute of Automation, Chinese Academy of Sciences, Beijing, China  </I></br>
-  <b>Project: Design Platform for Innovative Micro-processor </b>
-  <ul>
-     <li>  40 million CNY budget</li>
-     <li>  Proposed the system architecture and implementation plan </li>
-     <li>  Defined the flow for processor architecture design to ensure performance and power </li>
-     <li>  Designed the pipeline microarchitecture to ensure high frequency (1.4GHz) </li>
-  </ul>
-
-  <div class="research-title"> Senior Engineer  </div>
-  <div class="research-date">  Jan 2010 -- July 2015 </div>
+  <div class="research-title"> Research Scientiest </div>
+  <div class="research-date">  Jan 2010 -- July 2016 </div>
   <I>Institute of Automation, Chinese Academy of Sciences, Beijing, China </I> </br>
   <b> Project: MaPU -- Mathematical Computing Processor </b>
   <div class="hide">
@@ -101,69 +94,6 @@ University of California, San Diego 92093
 
     <div class="more-less"> more&gt&gt </div>
 
-
-    <div class="research-title"> PhD student </div>
-    <div class="research-date"> April 2006 -- Dec 2009 </div>
-    <I>Institute of Automation, Chinese Academy of Sciences, Beijing, China </I> </br>
-    <b> Project: High Performance Digital Signal Processor </b>
-    <ul>
-       <li> 4 issue VLIW DSP, running at 600MHz. </li>
-       <li> Took charge of integer arithmetic unit: Supports 8,16,32bit SIMD singed &amp unsigned 64bit data, saturated/truncation option, overflow/carryout detection </li>
-       <li> Took charge of load/store unit:  Supports misaligned address, circular buffer, bit reverser mode, address auto increment</li>
-       <li> Took charge of the IEEE 754 floating point: Standard dual path adder, round to zero/nearest, flush denormalized result </li>
-       <li> Successfully taped out with 90nm process, used in scale. </li>
-    </ul>
-
-    <b> Project: MIPS 4K compatible processor MCore  </b>
-    <ul>
-      <li> Took charge of the arithmetic unit (integer &amp floating point), cache (i/d, 4kB, 4-assci, 16Byte line size), system coprocessor (CP0, interrupt control) </li>
-      <li> Took charge of tool chain and system software: Runtime environment, link scripts, exception handler framework, OS porting. Verified on FPGA with uCOS-II. </li>
-    </ul>
-
-</div> <!-- end of posttext -->
-
-  <!--Start of the education -->
-  <div class="section">
-    <div class="section-title"> Education  </div>
-  </div>  <!--section-->
-
-  <div class="posttext"> 
-  <div class="research-title"> PhD in Computer Science </div>
-  <div class="research-date">  Sep 2006 -- July 2009  </div>
-  <I> Graduate University of Chinese Academy of Sciences, Beijing, China  </I> </br>
-  <I> Dissertation: High Performance Heterogeneous multi-core DSP design </I> </br>
-  </br>
-  <div class="research-title"> Master in Circuit and System </div>
-  <div class="research-date">  Sep 2004 -- July 2006 </div>
-  <I> Information College, Zhejiang University, HangZhou, China </I> </br>
-  </br>
-  <div class="research-title"> Bachelor in Micro-electronics </div>
-  <div class="research-date">  Sep 2000  -- July 2004 </div>
-  <I> Information College, Zhejiang University, HangZhou, China </I>
-  </br>
-
-</div> <!-- end of posttext -->
-
-  <!--Start of the skills -->
-  <div class="section">
-    <div class="section-title"> Skills  </div>
-  </div>  <!--section-->
-
-  <div class="posttext"> 
-  <b> Professional VLSI Skills: </b>
-  <ul>
-     <li>  Expertise in VLSI flow, including module partition, digital circuit design, integration &amp verification, synthesis, static time analyse and optimization, layout etc. </li>
-     <li> Expertise in Verilog, SystemVerilog and Tcl. Proficient in EDA tools such as VCS, Leda, Design Compiler, Verdi, IC Compiler, Prime Time. </li>
-     <li> Familiar with FPGA prototyping for VLSI. In MaPU projects, implemented a SoC with 1 ARM and 1 MaPU core with 2 Xillinx 7 FPGAs.</li>
-  </ul>
-
-  <b> IT Skills:  </b>
-  <ul>
-      <li> Solid Linux operation skill: Maintained internal linux server with Web, EDA, email and repository service. </li>
-      <li> Excellent Configuration management skill: Proficient in Subversion and Git software, Maintained the repository of MaPU project.</li>
-      <li> Excellent presentation and writing skill. </li>
-      <li> Solid programing skill, familiar with linux bash, python, tcl, C/C++, matlab, HTML, CSS, PHP. </li>
-  </ul>
 </div> <!-- end of posttext -->
 
   <!--Start of the publications -->
@@ -176,6 +106,7 @@ University of California, San Diego 92093
    <li> D. Wang, <b> S. Xie </b>, et al. "MaPU: A novel mathematical computing architecture." 2016 IEEE <I> International Symposium on High Performance Computer Architecture </I> (HPCA). IEEE, 2016. </li>
 </ul>
 
+  <div class="hide">
   <b> US Patents: </b>
   <ul>
      <li> <b> S. Xie</b>, D. Wang, J. Hao, T. Wang, and L. Yin, &quot <b>Parallel bit reversal devices and methods.</b> &quot U.S. Patent No. 9,268,744. <b>Issued</b> Feb 23, 2016. Avaliable:<a href="www.google.com/patents/US20140089370"> Google Patent </a>. </li>
@@ -206,6 +137,8 @@ University of California, San Diego 92093
 
      <li>D. Wang, Z. Liu, X. Zhang, <b>S. Xie</b>, &quot <b> Multi-dimensional DMA (direct memory access) transmitting device and method </b> .&quot  CHN. Patent, Patent No. CN201110449966.X, issued Sep 17, 2014. Avaliable: <a href="http://www.google.com/patents/CN102567258B">Google Patent </a> </li>
    </ul>
+   </div> <!-- end of hide -->
+   <div class="more-less"> more&gt&gt </div>
 </div><!--publication  -->
 </div><!-- main_resume -->
 
