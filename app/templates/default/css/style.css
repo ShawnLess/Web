@@ -49,6 +49,11 @@ img.alignright {
     margin:0 auto;
 }
 
+pre {
+	background:  #EBECE4; 
+	margin-left: 10px;
+}
+
 ul {
 	list-style-type: square;
 }
