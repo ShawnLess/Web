@@ -103,7 +103,16 @@ University of California, San Diego 92093
  
  <div class="publication"> 
  <ul>
-   <li> D. Wang, <b> S. Xie </b>, et al. "MaPU: A novel mathematical computing architecture." 2016 IEEE <I> International Symposium on High Performance Computer Architecture </I> (HPCA). IEEE, 2016. </li>
+   <li> <u>Celerity: An Open Source RISC-V Tiered Accelerator Fabric</u> </br>
+	T. Ajayi, K. Al-Hawaj et al.  (<b>hotchips'17</b>). 
+       (<a href="files/doc/Celerity_hotchips17.pdf"><b>PDF</b></a> )
+   </li>
+   <li> <u>MaPU: A novel mathematical computing architecture</u> </br>
+       D. Wang, <b> S. Xie </b>, et al.IEEE <I> International Symposium on High Performance Computer Architecture </I> 
+       (<b>HPCA'16</b>). IEEE, 2016.
+       (<a href="files/doc/MaPU-HPCA16.pdf"><b>PDF</b></a>,
+        <a href="files/doc/MaPU_HPCA16.pptx"><b>PPT</b></a>)
+   </li>
 </ul>
 
   <div class="hide">
