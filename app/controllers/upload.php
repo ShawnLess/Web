@@ -18,7 +18,7 @@ public function upload(){
         try {
             /*The maximum image width is restricted by the width of the blog contianer*/
             /* The maximum file size is constrained in .httpaccess file*/
-            $img_name = $this->_upload->processUploadedImage($_FILES['FilePath'], "/Shawn/files/", array(520, 1024),TRUE);
+            $img_name = $this->_upload->processUploadedImage($_FILES['FilePath'], "/files/", array(520, 1024),TRUE);
         }catch(Exception $e){
             echo ($e->getMessage());
             die($e->getMessage());

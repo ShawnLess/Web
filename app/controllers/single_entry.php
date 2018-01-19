@@ -164,7 +164,7 @@ public function confirm_comment_delete($id){
 	if(Session::get('loggin') == true) {
 		//This is to handle the submit
     if(isset($_POST['submit']) ) {
-      if( $_POST['submit'] == 'delete') { $this->_entries->delete_entry($_POST['id'], "/Shawn/files/"); }
+      if( $_POST['submit'] == 'delete') { $this->_entries->delete_entry($_POST['id'], "/files/"); }
       Url::redirect('entries/index/pages=0,10');	
     }
 
