@@ -7,7 +7,7 @@ set_error_handler('logger::error_handler');
 date_default_timezone_set('China/Beijing');
 
 //site address
-define('DIR','http://www.shawnless.net/Shawn/');
+define('DIR','http://www.shawnless.net/');
 
 //database details ONLY NEEDED IF USING A DATABASE
 define('DB_TYPE','mysql');
